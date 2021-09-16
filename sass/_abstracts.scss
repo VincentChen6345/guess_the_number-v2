@@ -1,0 +1,20 @@
+//variables
+$background-color: #222;
+$text-color: #eee;
+
+.h2 {
+  font-size: 1.5rem;
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  background-color: aqua;
+  text-decoration: none;
+
+  &__1 {
+    display: block;
+    align-self: flex-start;
+    justify-self: flex-start;
+  }
+}

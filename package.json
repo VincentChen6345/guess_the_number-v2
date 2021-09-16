@@ -1,0 +1,14 @@
+{
+  "name": "guess-the-number-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles.css -w -r"
+  },
+  "author": "vincent chen",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

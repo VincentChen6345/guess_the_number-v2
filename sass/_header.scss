@@ -1,0 +1,26 @@
+.header {
+  height: 35%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr max-content 1fr;
+  justify-items: center;
+  padding: 1.5rem;
+  border-bottom: 0.5rem solid $text-color;
+
+  &__title {
+    font-size: 4rem;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  &__description {
+    grid-column: 3/-1;
+  }
+}
+
+.secret-number {
+  font-size: 5rem;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-self: center;
+}
