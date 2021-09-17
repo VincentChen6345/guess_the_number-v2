@@ -9,12 +9,15 @@ $text-color: #eee;
 .btn {
   font-size: 2rem;
   padding: 2rem 3rem;
-  background-color: aqua;
+  background-color: $text-color;
   text-decoration: none;
+  border: none;
+  font-family: inherit;
 
   &__1 {
     display: block;
-    align-self: flex-start;
+    align-self: center;
     justify-self: flex-start;
+    margin-left: 4vw;
   }
 }

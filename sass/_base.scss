@@ -14,3 +14,13 @@ html {
   color: $text-color;
   background-color: $background-color;
 }
+
+.section-container {
+  font-size: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 60%;
+  padding: 10rem 10rem;
+  margin-top: 1.5rem;
+}

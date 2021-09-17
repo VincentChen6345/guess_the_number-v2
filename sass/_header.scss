@@ -1,26 +1,38 @@
 .header {
-  height: 35%;
+  height: 40%;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 1fr max-content 1fr;
   justify-items: center;
   padding: 1.5rem;
-  border-bottom: 0.5rem solid $text-color;
+  border-bottom: 0.8rem solid $text-color;
+  position: relative;
 
   &__title {
     font-size: 4rem;
     grid-column: 2/3;
     grid-row: 2/3;
+    align-self: center;
   }
 
   &__description {
     grid-column: 3/-1;
+    font-size: 2rem;
+    align-self: center;
+    justify-self: flex-start;
   }
 }
 
 .secret-number {
-  font-size: 5rem;
+  font-size: 6rem;
   grid-column: 2/3;
   grid-row: 3/4;
   justify-self: center;
+  padding: 3rem 8rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 65%);
+  color: $background-color;
+  background-color: $text-color;
 }
