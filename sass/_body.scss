@@ -1,5 +1,5 @@
 .guess {
-  background-color: $background-color;
+  background-color: transparent;
   border: 0.5rem solid $text-color;
   justify-self: center;
   color: $text-color;
@@ -14,6 +14,7 @@
   grid-row: 1/2;
   grid-column: 2/-1;
   margin-left: 6vw;
+  backface-visibility: hidden;
 }
 .score {
 }
@@ -22,6 +23,7 @@
     grid-row: 2/3;
     grid-column: 2/3;
     margin-left: 6vw;
+    backface-visibility: hidden;
   }
 
   &--2 {
@@ -30,6 +32,7 @@
     align-self: center;
     margin-left: 6vw;
     margin-top: 1.5rem;
+    backface-visibility: hidden;
   }
 }
 .scoreDigit {
