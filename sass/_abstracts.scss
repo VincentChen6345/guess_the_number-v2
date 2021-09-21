@@ -6,7 +6,8 @@ $text-color: #eee;
 $bp-largest: 65em; //1020px/16px=63.75em;
 $bp-large: 53em; //810px/16px=50.625em
 $bp-medium: 43em; // 689px/16=41em
-
+$bp-small: 32em; //500px//31.25em
+$bp-smallest: 23.5em; //376px/16=23.5em
 .h2 {
   font-size: 1.5rem;
 }
@@ -28,6 +29,11 @@ $bp-medium: 43em; // 689px/16=41em
     @media only screen and(max-width:$bp-large) {
       grid-row: 1/2;
       grid-column: 1/2;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-row: 1/2;
+      justify-self: center;
     }
   }
 }
