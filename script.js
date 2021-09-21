@@ -35,7 +35,7 @@ const gameLogic = function () {
       secretNumber.style.padding = "3rem 12rem;";
       background.style.backgroundColor = "green";
       //set new highScore
-      if (score.textContent > highScore.textContent) {
+      if (+score.textContent > +highScore.textContent) {
         highScore.textContent = score.textContent;
       }
     }
