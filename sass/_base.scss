@@ -1,5 +1,4 @@
 * {
-  font-size: 62.5%;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -7,6 +6,10 @@
 html {
   font-family: "Press Start 2P";
   box-sizing: inherit;
+  font-size: 62.5%; // 1rem==10px
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
 }
 
 .container {
@@ -16,11 +19,19 @@ html {
 }
 
 .section-container {
-  font-size: 4rem;
+  font-size: 3rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   height: 60%;
+  grid-column-gap: 5rem;
   padding: 10rem 10rem;
   margin-top: 1.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: minmax(min-content, max-content);
+    grid-row-gap: 2rem;
+    justify-content: center;
+  }
 }

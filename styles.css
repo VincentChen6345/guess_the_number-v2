@@ -14,6 +14,44 @@
     align-self: center;
     justify-self: flex-start;
     margin-left: 4vw; }
+    @media only screen and (max-width: 53em) {
+      .btn__1 {
+        grid-row: 1/2;
+        grid-column: 1/2; } }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-family: "Press Start 2P";
+  box-sizing: inherit;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 65em) {
+    html {
+      font-size: 50%; } }
+
+.container {
+  height: 100vh;
+  color: #eee;
+  background-color: #222; }
+
+.section-container {
+  font-size: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 60%;
+  grid-column-gap: 5rem;
+  padding: 10rem 10rem;
+  margin-top: 1.5rem; }
+  @media only screen and (max-width: 43em) {
+    .section-container {
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: minmax(min-content, max-content);
+      grid-row-gap: 2rem;
+      justify-content: center; } }
 
 .guess {
   background-color: transparent;
@@ -26,18 +64,39 @@
   width: 30rem;
   padding: 0 3rem;
   margin-right: 5vw; }
+  @media only screen and (max-width: 65em) {
+    .guess {
+      height: 15rem;
+      margin-right: 0vw; } }
+  @media only screen and (max-width: 43em) {
+    .guess {
+      grid-row: 2/3;
+      grid-column: 1/2;
+      height: 10rem;
+      margin: 1rem 0rem; } }
 
 .instructions {
   grid-row: 1/2;
   grid-column: 2/-1;
   margin-left: 6vw;
   backface-visibility: hidden; }
+  @media only screen and (max-width: 43em) {
+    .instructions {
+      grid-row: 1/2;
+      grid-column: 1/2;
+      margin: 0; } }
 
 .label--1 {
   grid-row: 2/3;
   grid-column: 2/3;
   margin-left: 6vw;
   backface-visibility: hidden; }
+  @media only screen and (max-width: 43em) {
+    .label--1 {
+      grid-row: 4/5;
+      grid-column: 1/2;
+      margin: 0;
+      justify-self: center; } }
 
 .label--2 {
   grid-row: 2/3;
@@ -46,6 +105,12 @@
   margin-left: 6vw;
   margin-top: 1.5rem;
   backface-visibility: hidden; }
+  @media only screen and (max-width: 43em) {
+    .label--2 {
+      grid-row: 5/6;
+      grid-column: 1/2;
+      margin: 0;
+      justify-self: center; } }
 
 .scoreDigit {
   font-size: inherit; }
@@ -55,27 +120,51 @@
   align-self: center;
   margin-right: 5vw;
   width: 20rem; }
+  @media only screen and (max-width: 53em) {
+    .check {
+      margin-right: 0; } }
+  @media only screen and (max-width: 43em) {
+    .check {
+      grid-row: 3/4;
+      grid-column: 1/2;
+      margin: 1rem 0; } }
 
 .header {
   height: 40%;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 1fr max-content 1fr;
+  grid-template-columns: 1fr minmax(min-content, max-content) 1fr;
   justify-items: center;
   padding: 1.5rem;
   border-bottom: 0.8rem solid #eee;
   position: relative; }
+  @media only screen and (max-width: 53em) {
+    .header {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: max-content;
+      justify-content: center; } }
   .header__title {
     font-size: 4rem;
     grid-column: 2/3;
     grid-row: 2/3;
     align-self: center;
     color: yellow; }
+    @media only screen and (max-width: 53em) {
+      .header__title {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        justify-self: flex-end; } }
   .header__description {
     grid-column: 3/-1;
     font-size: 2rem;
     align-self: center;
     justify-self: flex-start; }
+    @media only screen and (max-width: 53em) {
+      .header__description {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        justify-self: flex-end;
+        z-index: -1; } }
 
 .secret-number {
   font-size: 6rem;
@@ -89,27 +178,7 @@
   transform: translate(-50%, 65%);
   color: #222;
   background-color: #eee; }
-
-* {
-  font-size: 62.5%;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0; }
-
-html {
-  font-family: "Press Start 2P";
-  box-sizing: inherit; }
-
-.container {
-  height: 100vh;
-  color: #eee;
-  background-color: #222; }
-
-.section-container {
-  font-size: 4rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  height: 60%;
-  padding: 10rem 10rem;
-  margin-top: 1.5rem; }
+  @media only screen and (max-width: 53em) {
+    .secret-number {
+      grid-row: 3/4;
+      grid-column: 1/2; } }
