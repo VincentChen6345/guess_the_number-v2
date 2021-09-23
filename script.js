@@ -8,6 +8,7 @@ const secretNumber = document.querySelector(".secret-number");
 const background = document.querySelector(".container");
 const checkBTN = document.querySelector(".check");
 const againBTN = document.querySelector(".btn__1");
+const resetBTN = document.querySelector(".reset");
 ///////////////////////
 //////GameOver function/
 const gameOver = function () {
@@ -82,9 +83,9 @@ guess.addEventListener("keydown", function (e) {
   }
 });
 ////////////////////////////
-
-//again button functionality
-againBTN.addEventListener("click", function () {
+////////////////////////////
+///reset game function
+const reset = function () {
   // reset score
   score.textContent = 20;
   //reset message
@@ -103,4 +104,17 @@ againBTN.addEventListener("click", function () {
   document.querySelector(".guess").value = "";
   //set playing= true;
   playing = true;
+};
+////////////////////////////
+//again button functionality
+againBTN.addEventListener("click", reset);
+
+///////////////////////////////////
+/////////Reset button functionality
+resetBTN.addEventListener("click", function () {
+  //set highscore=0;
+  highScore.textContent = 0;
+
+  // add all functionality of 'again' button
+  reset();
 });

@@ -148,6 +148,18 @@ html {
       grid-column: 1/2;
       margin: 1rem 0; } }
 
+.reset {
+  justify-self: center;
+  margin-right: 5vw;
+  align-self: center;
+  width: 20rem; }
+  @media only screen and (max-width: 53em) {
+    .reset {
+      margin-right: 0; } }
+  @media only screen and (max-width: 43em) {
+    .reset {
+      margin: 1rem 0; } }
+
 .header {
   height: 40%;
   display: grid;
